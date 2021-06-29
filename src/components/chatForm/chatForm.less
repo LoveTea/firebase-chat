@@ -1,0 +1,24 @@
+.form {
+  display: flex;
+
+  @media(max-width: 450px) {
+    flex-direction: column;
+  }
+
+  &__input {
+    flex-grow: 1;
+
+    @media(max-width: 450px) {
+      height: 50px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__submit {
+    margin-left: 15px;
+
+    @media(max-width: 450px) {
+      margin-left: 0;
+    }
+  }
+}
